@@ -5,7 +5,7 @@
     <path id="ant.jmeter.classpath">
         <pathelement location="${jmeter-home}/extras/ant-jmeter-1.1.1.jar"/>
     </path>
-	 <path id="xslt.classpath">
+	<path id="xslt.classpath">
         <fileset dir="${jmeter-home}/lib" includes="xalan*.jar"/>
         <fileset dir="${jmeter-home}/lib" includes="serializer*.jar"/>
     </path>
