@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF8"?>
 <project default="all">
     <property name="jmeter-home" value="/usr/local/apache-jmeter-5.3"/>
-	<property name="test" value="woniusales"/>
+	<property name="test" value="Test"/>
     <path id="ant.jmeter.classpath">
         <pathelement location="${jmeter-home}/extras/ant-jmeter-1.1.1.jar"/>
     </path>
+	 <path id="xslt.classpath">
+        <fileset dir="${jmeter-home}/lib" includes="xalan*.jar"/>
+        <fileset dir="${jmeter-home}/lib" includes="serializer*.jar"/>
+    </path>
     <taskdef
         name="jmeter"
         classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask"
