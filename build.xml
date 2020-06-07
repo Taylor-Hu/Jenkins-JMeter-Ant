@@ -38,6 +38,14 @@
             style="${jmeter-home}/extras/jmeter-results-report_21.xsl">
 			<param name="dateReport" expression="${report.datestamp}"/>
         </xslt>
+		
+		<copy todir="results/html">
+            <fileset dir="${jmeter-home}/extras">
+                <include name="collapse.png" />
+                <include name="expand.png" />
+            </fileset>
+        </copy>
+
     </target>
 
     <target name="all" depends="test, report"/>
